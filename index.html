@@ -243,7 +243,7 @@
     </div>
 
     <div class="form-group">
-      <label>Pertanyaan / Permohonan (Opsional)</label>
+      <label>Pertanyaan / Permohonan</label>
       <textarea id="pertanyaan" rows="4"></textarea>
     </div>
 
@@ -275,7 +275,7 @@
       }
     });
 
-    // Handle submit
+   
     document.getElementById('submitBtn').addEventListener('click', async function(e) {
       e.preventDefault();
 
@@ -316,10 +316,10 @@
           overlay.style.display = 'none';
           notification.style.display = 'block';
 
-          // Auto refresh setelah 2 detik
+          
           setTimeout(() => {
             notification.style.display = 'none';
-            location.reload(); // ← INI YANG BARU: auto refresh halaman
+            location.reload(); 
           }, 2000);
 
         } else {
